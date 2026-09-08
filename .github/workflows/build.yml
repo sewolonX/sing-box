@@ -89,6 +89,7 @@ jobs:
       - calculate_version
     strategy:
       max-parallel: 13
+      fail-fast: false
       matrix:
         include:
           - { os: linux, arch: amd64, variant: purego, naive: true }
